@@ -1,0 +1,43 @@
+footer{
+    color: #121212;
+}
+
+.social-icons {
+    margin: -20px 0px 0px 0px ;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+.social-icons i {
+    display: inline-block;
+    margin: 10px;
+    transition: transform .2s;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.made-with {
+    margin: 0px;
+}
+
+.connect-with {
+    margin: -15px 0px 0px 0px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:link, a:visited, a:hover, a:active {
+    color: #121212;
+}
+
+@media screen and (max-width: 320px){
+    footer{
+        margin: 40px 0px 0px 0px;
+    }
+}

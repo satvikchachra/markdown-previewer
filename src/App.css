@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+.header {
+  color: #121212;
+}
+
+.App {
+  margin: 30px 80px;
+}
+
+.header h1, h3 {
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+}
+
+textarea {
+  width: 500px;
+  height: 400px;
+  margin: 50px 50px 0px 0px;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #121212;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.preview-container {
+  height: 400px;
+  padding: 20px;
+  margin-top: 50px;
+  overflow-y: auto;
+  border: 1px solid #000000;
+}
+
+@media only screen and (max-width: 1024px) {
+  textarea {
+    width: 400px;
+    height: 375px;
+  }
+  .preview-container {
+    width: 400px;
+    height: 375px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .App {
+    margin: 50px 40px;
+  }
+  
+  textarea {
+    width: 260px;
+    height: 300px;
+  }
+  .preview-container {
+    width: 260px;
+    height: 300px;
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    display: block;
+  }
+  textarea {
+    width: 250px;
+    height: 300px;
+  }
+  .preview-container {
+    width: 250px;
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .App {
+    margin: 50px 40px;
+  }
+  .container {
+    display: block;
+  }
+  textarea {
+    width: 250px;
+    height: 300px;
+  }
+  .preview-container {
+    width: 250px;
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .App {
+    margin: 50px 30px;
+  }
+  .container {
+    display: block;
+  }
+  textarea {
+    width: 215px;
+    height: 300px;
+  }
+  .preview-container {
+    width: 215px;
+    height: 300px;
+    margin-top: 30px;
+  }
+}
