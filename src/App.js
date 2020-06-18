@@ -63,7 +63,7 @@ Marky is an online markdown editor built by [Satvik Chachra](https://github.com/
     // Process input text as markdown
     const markdown = marked(text, { breaks: true });
 
-    // Chnge background-color of text-area
+    // Change background-color of text-area
     const setbg = (color) => {
       document.querySelector('#editor').style.backgroundColor = `${color}`;
     }

@@ -26,6 +26,7 @@ body {
 textarea {
   width: 500px;
   height: 400px;
+  resize: none;
   margin: 50px 50px 0px 0px;
   padding: 20px;
   color: #ffffff;
@@ -58,29 +59,28 @@ textarea {
   .App {
     margin: 50px 40px;
   }
-  
   textarea {
     width: 260px;
-    height: 300px;
+    height: 370px;
   }
   .preview-container {
     width: 260px;
-    height: 300px;
+    height: 370px;
     margin-top: 50px;
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .container {
     display: block;
   }
   textarea {
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 360px;
   }
   .preview-container {
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 360px;
     margin-top: 30px;
   }
 }
