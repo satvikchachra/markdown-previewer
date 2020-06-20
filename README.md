@@ -18,7 +18,7 @@
 ## Setup
 #### Clone this repository
 ```bash
-https://github.com/satvikchachra/markdown-previewer.git
+git clone https://github.com/satvikchachra/markdown-previewer.git
 ```
 
 #### Move to desired directory
