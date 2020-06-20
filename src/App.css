@@ -37,6 +37,7 @@ textarea {
 
 .preview-container {
   height: 400px;
+  width: 500px;
   padding: 20px;
   margin-top: 50px;
   overflow-y: auto;
