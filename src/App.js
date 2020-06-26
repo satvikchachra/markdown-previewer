@@ -15,7 +15,7 @@ Marky is an online markdown editor built by [Satvik Chachra](https://github.com/
   2. Two
   3. Three
 
-  
+
   ### Bulletpoint List
   * One
   * Two
@@ -66,7 +66,27 @@ Marky is an online markdown editor built by [Satvik Chachra](https://github.com/
     // Change background-color of text-area
     const setbg = (color) => {
       document.querySelector('#editor').style.backgroundColor = `${color}`;
-    }
+    };
+
+    // For .md file
+    let fileReader;
+
+    // To read .md file
+    const handleFileRead = (e) => {
+      const content = fileReader.result;
+
+      // Update state with content of the file
+      this.setState({
+        text: content
+      });
+    };
+
+    // To handle .md file
+    const handleFileChosen = (file) => {
+      fileReader = new FileReader();
+      fileReader.onloadend = handleFileRead;
+      fileReader.readAsText(file);
+    };
 
     return (
       <div className="App" >
@@ -78,12 +98,21 @@ Marky is an online markdown editor built by [Satvik Chachra](https://github.com/
         <div className="container">
           <div className="editor-container">
             <textarea id="editor" value={text} onChange={this.handleChange} onFocus={() => setbg('#191919')} onBlur={() => setbg('#121212')}></textarea>
+
+            <div className="file-container">
+              <input type="file"
+                id="file"
+                className="input-file"
+                accept=".md"
+                onChange={e => handleFileChosen(e.target.files[0])}></input>
+            </div>
           </div>
 
           <div className="preview-container">
             <div id="preview" dangerouslySetInnerHTML={{ __html: markdown }}></div>
           </div>
         </div>
+
         <Footer />
       </div>
     )
