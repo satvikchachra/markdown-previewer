@@ -25,7 +25,7 @@ body {
 
 textarea {
   width: 500px;
-  height: 305px;
+  height: 350px;
   resize: none;
   margin: 50px 50px 0px 0px;
   padding: 20px;
@@ -36,7 +36,7 @@ textarea {
 }
 
 .preview-container {
-  height: 305px;
+  height: 350px;
   width: 500px;
   padding: 20px;
   margin-top: 50px;
